@@ -1,29 +1,5 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
++ These files will only have any value with [AMUMSS](https://www.nexusmods.com/nomanssky/mods/957)
++ I should probably use a markdown editor rather than doing this by _hand_ in the bitbucket text editor
++ Once you read the AMUMSS documentation thes files are fairly self explanatory.  Some are for use by themselves and others are meant to be used together and/or with existing mods to make patches.
