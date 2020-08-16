@@ -1,8 +1,17 @@
+local AuthorName = "Bladehawke"
+local ModName = "bExo48"
+local GameVersion = "2.62"
+local ModVersion = "a"
+local ModDesc = "Makes exocraft have 48 slots"
+local ModBatch = "bInventoryTweaks"
+local BatchVersion = "a"
+
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"] = "48Exo.pak",
-	["MOD_DESCRIPTION"] = "Makes exocraft have 48 slots",
-	["MOD_AUTHOR"] = "Bladehawke",
-	["NMS_VERSION"] = "2.41",
+	["MOD_FILENAME"] = ModName .. " " .. GameVersion .. ModVersion .. ".pak",
+	["MOD_BATCHNAME"] = ModBatch .. " " .. GameVersion .. BatchVersion .. ".pak",
+    ["MOD_DESCRIPTION"] = ModDesc,
+    ["MOD_AUTHOR"] = AuthorName,
+    ["NMS_VERSION"] = GameVersion,
 	["MODIFICATIONS"] = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
@@ -13,21 +22,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "VehicleSmall"},
 							["VALUE_CHANGE_TABLE"] = {
 								{"MinSlots", "48"},
-								{"MaxSlots", "48"} --Original "16"
+								{"MaxSlots", "48"}
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "VehicleMedium"},
 							["VALUE_CHANGE_TABLE"] = {
 								{"MinSlots", "48"},
-								{"MaxSlots", "48"} --Original "28"
+								{"MaxSlots", "48"}
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "VehicleLarge"},
 							["VALUE_CHANGE_TABLE"] = {
 								{"MinSlots", "48"},
-								{"MaxSlots", "48"} --Original "42"
+								{"MaxSlots", "48"}
 							}
 						}
 					} -- total 6 actions
