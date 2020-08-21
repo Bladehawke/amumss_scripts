@@ -165,39 +165,39 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"S", "100"}
 							}
 						}, --127 global replacements
-						{
-							["PRECEDING_KEY_WORDS"] = "ClassProbabilityData",
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] = "ALL", --13*4=52 actions
-							["VALUE_MATCH"] = "",
-							["VALUE_MATCH_TYPE"] = "",
-							["VALUE_CHANGE_TABLE"] = {
-								{"C", "0"},
-								{"B", "0"},
-								{"A", "0"},
-								{"S", "100"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "ShipBaseStatsData",
-							["MATH_OPERATION"] = "*F:Max",
-							["REPLACE_TYPE"] = "ALL", --72 actions
-							["VALUE_MATCH"] = "",
-							["VALUE_MATCH_TYPE"] = "",
-							["VALUE_CHANGE_TABLE"] = {
-								{"Min", "1"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "WeaponBaseStatsData",
-							["MATH_OPERATION"] = "*F:Max",
-							["REPLACE_TYPE"] = "ALL", --48 actions
-							["VALUE_MATCH"] = "",
-							["VALUE_MATCH_TYPE"] = "",
-							["VALUE_CHANGE_TABLE"] = {
-								{"Min", "1"}
-							}
-						}
+						-- {
+						-- 	["PRECEDING_KEY_WORDS"] = "ClassProbabilityData",
+						-- 	["MATH_OPERATION"] = "",
+						-- 	["REPLACE_TYPE"] = "ALL", --13*4=52 actions
+						-- 	["VALUE_MATCH"] = "",
+						-- 	["VALUE_MATCH_TYPE"] = "",
+						-- 	["VALUE_CHANGE_TABLE"] = {
+						-- 		{"C", "0"},
+						-- 		{"B", "0"},
+						-- 		{"A", "0"},
+						-- 		{"S", "100"}
+						-- 	}
+						-- },
+						-- {
+						-- 	["PRECEDING_KEY_WORDS"] = "ShipBaseStatsData",
+						-- 	["MATH_OPERATION"] = "*F:Max",
+						-- 	["REPLACE_TYPE"] = "ALL", --72 actions
+						-- 	["VALUE_MATCH"] = "",
+						-- 	["VALUE_MATCH_TYPE"] = "",
+						-- 	["VALUE_CHANGE_TABLE"] = {
+						-- 		{"Min", "1"}
+						-- 	}
+						-- },
+						-- {
+						-- 	["PRECEDING_KEY_WORDS"] = "WeaponBaseStatsData",
+						-- 	["MATH_OPERATION"] = "*F:Max",
+						-- 	["REPLACE_TYPE"] = "ALL", --48 actions
+						-- 	["VALUE_MATCH"] = "",
+						-- 	["VALUE_MATCH_TYPE"] = "",
+						-- 	["VALUE_CHANGE_TABLE"] = {
+						-- 		{"Min", "1"}
+						-- 	}
+						-- }
 					} -- total 291 actions
 				}
 			}
