@@ -5,7 +5,7 @@
 local AuthorName = "Bladehawke"
 local ModName = "Ships48"
 local GameVersion = "2.62"
-local ModVersion = "a"
+local ModVersion = "b"
 local ModDesc = "Makes ships spawn with 48 inventory and technology slots"
 local ModBatch = "bInventoryTweaks"
 local BatchVersion = "a"
@@ -33,16 +33,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SciSmall"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSlots", "48"},
-                                {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SciMedium"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
@@ -54,6 +44,34 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SciLarge"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpSmall"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpMedium"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpLarge"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
