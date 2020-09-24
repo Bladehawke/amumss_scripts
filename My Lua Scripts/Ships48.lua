@@ -4,15 +4,15 @@
 
 local AuthorName = "Bladehawke"
 local ModName = "Ships48"
-local GameVersion = "2.62"
-local ModVersion = "b"
+local GameVersion = "3.0"
+local ModVersion = "a"
 local ModDesc = "Makes ships spawn with 48 inventory and technology slots"
 local ModBatch = "bInventoryTweaks"
 local BatchVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"] = ModName .. " " .. GameVersion .. ModVersion .. ".pak",
---	["MOD_BATCHNAME"] = ModBatch .. " " .. GameVersion .. BatchVersion .. ".pak",
+    ["MOD_FILENAME"] = ModName .. " " .. GameVersion .. ModVersion .. ".pak",
+--   ["MOD_BATCHNAME"] = ModBatch .. " " .. GameVersion .. BatchVersion .. ".pak",
     ["MOD_DESCRIPTION"] = ModDesc,
     ["MOD_AUTHOR"] = AuthorName,
     ["NMS_VERSION"] = GameVersion,
@@ -22,6 +22,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SciSmall"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SciSmall"},
                             ["REPLACE_TYPE"] = "",
@@ -44,34 +54,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SciLarge"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSlots", "48"},
-                                {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpSmall"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSlots", "48"},
-                                {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
-                            }
-                        },                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpMedium"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSlots", "48"},
-                                {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
-                            }
-                        },                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpLarge"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
@@ -132,6 +114,36 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "ShtLarge"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpSmall"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpMedium"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinExtraTech", "48"},
+                                {"MaxExtraTech", "48"}
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "DrpLarge"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
@@ -383,38 +395,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"MinSize", "48"},
                                 {"MaxSize", "48"}
                             }
-                        }
-                    },
-                    {
-                        ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_BASE"},
-                        ["REPLACE_TYPE"] = "",
-                        ["VALUE_CHANGE_TABLE"] = {
-                            {"MinSize", "48"},
-                            {"MaxSize", "48"}
-                        }
-                    },
-                    {
-                        ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_SMALL"},
-                        ["REPLACE_TYPE"] = "",
-                        ["VALUE_CHANGE_TABLE"] = {
-                            {"MinSize", "48"},
-                            {"MaxSize", "48"}
-                        }
-                    },
-                    {
-                        ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_MEDIUM"},
-                        ["REPLACE_TYPE"] = "",
-                        ["VALUE_CHANGE_TABLE"] = {
-                            {"MinSize", "48"},
-                            {"MaxSize", "48"}
-                        }
-                    },
-                    {
-                        ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_LARGE"},
-                        ["REPLACE_TYPE"] = "",
-                        ["VALUE_CHANGE_TABLE"] = {
-                            {"MinSize", "48"},
-                            {"MaxSize", "48"}
                         }
                     }
                 }
