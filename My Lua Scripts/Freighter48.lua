@@ -3,8 +3,8 @@
 -- result in a shorter script, but I'm trying to modularize these particular scripts so we can mix and match the effects
 
 local AuthorName = "Bladehawke"
-local ModName = "Freighter48"
-local GameVersion = "2.62"
+local ModName = "bFreighter48"
+local GameVersion = "3.13"
 local ModVersion = "a"
 local ModDesc = "Makes Freighters spawn with 48 inventory/tech slots"
 local ModBatch = "bInventoryTweaks"
