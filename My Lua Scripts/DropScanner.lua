@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= "DropScanner.pak",     --the name of the pak created (if not combined) - REQUIRED
   ["MOD_DESCRIPTION"]		= "",         --optional, for reference
   ["MOD_AUTHOR"]			= "",         --optional, for reference
-  ["NMS_VERSION"]			= "2.62",     --optional, for reference
+  ["NMS_VERSION"]			= "3.0",      --optional, for reference
   ["MODIFICATIONS"] 		=             --REQUIRED SECTION
 	{
 		{
@@ -276,7 +276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="NAV_DATA_OPTC" />
           <Property name="Text" value="NAV_DATA_RES" />
           <Property name="IsAlien" value="False" />
-          <Property name="Cost" value="C_RANDOM_SCAN" />
+          <Property name="Cost" value="C_ALLOWSCAN" />
           <Property name="Rewards">
             <Property value="NMSString0x10.xml">
               <Property name="Value" value="RANDOM_SCAN_C" />
