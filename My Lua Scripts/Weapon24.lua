@@ -2,7 +2,7 @@
 -- make it longer :p
 local AuthorName = "Bladehawke"
 local ModName = "bWeap24"
-local GameVersion = "2.62"
+local GameVersion = "3.13"
 local ModVersion = "a"
 local ModDesc = "Makes Multitools all spawn with 24 slots"
 local ModBatch = "bInventoryTweaks"
