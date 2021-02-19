@@ -4,7 +4,7 @@
 
 local AuthorName = "Bladehawke"
 local ModName = "bFreighter48"
-local GameVersion = "3.13"
+local GameVersion = "3.21"
 local ModVersion = "a"
 local ModDesc = "Makes Freighters spawn with 48 inventory/tech slots"
 local ModBatch = "bInventoryTweaks"

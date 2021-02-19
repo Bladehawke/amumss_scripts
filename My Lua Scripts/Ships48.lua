@@ -4,7 +4,7 @@
 
 local AuthorName = "Bladehawke"
 local ModName = "bShips48"
-local GameVersion = "3.13"
+local GameVersion = "3.21"
 local ModVersion = "a"
 local ModDesc = "Makes ships spawn with 48 inventory and technology slots"
 local ModBatch = "bInventoryTweaks"

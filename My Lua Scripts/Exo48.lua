@@ -1,6 +1,6 @@
 local AuthorName = "Bladehawke"
 local ModName = "bExo48"
-local GameVersion = "3.13"
+local GameVersion = "3.21"
 local ModVersion = "a"
 local ModDesc = "Makes exocraft have 48 slots"
 local ModBatch = "bInventoryTweaks"
