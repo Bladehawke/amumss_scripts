@@ -1,4 +1,4 @@
-TIME_DIVISOR = 18
+TIME_DIVISOR = 9 -- 10 minutes
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"] = "BaseComputerMissionTimer.pak",
 	["MOD_DESCRIPTION"] = [[	The original idea was to cut the missions down to 5 minute delays.
