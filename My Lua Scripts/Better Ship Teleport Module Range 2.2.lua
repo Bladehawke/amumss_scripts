@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID", "SHIP_TELEPORT"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"400"}
+								{"Bonus",	"40000"}
 							}
 						}
 					}
