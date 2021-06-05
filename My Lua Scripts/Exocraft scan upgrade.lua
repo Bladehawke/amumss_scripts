@@ -1,150 +1,146 @@
---[[┎───────────────────────────────────────────────────────────────────────
-	┃ Add planetary archive, base computer, minor settlement, trading post,
-	┃ ancient plaque, remote terminal, secure facility, distress signals
-	┃ and underwater targets to the exocraft scanner.
+--[[┎───────────────────────────────────────────────────────────────────────────────────
+	┃ Add base computer, minor settlement, trading post, secure facility, plaque,
+	┃ remote terminal, distress signals and underwater targets to the exocraft scanner.
 	┃ Make exocraft scanner tech available to the mech.
-────┸───────────────────────────────────────────────────────────────────--]]
-Scan_Table = {
-	dat = {
-		{
-			name = 'VEHICLE_BUILDING_DEPOT',
-			scan = {'DEPOT', 'TERMINAL'},
-			tech = 'VEHICLE_SCAN',
-			icon = 'QUICKMENU/BUILDINGS.DEPOT.DDS'
-		},
-		{
-			name = 'VEHICLE_BUILDING_DEPOT',
-			scan = {'DEPOT', 'TERMINAL'},
-			tech = 'MECH_SCAN',
-			icon = 'QUICKMENU/BUILDINGS.DEPOT.DDS'
-		},
-		{
-			name = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
-			scan = {'DROPPOD'},
-			tech = 'VEHICLE_SCAN1',
-			icon = 'QUICKMENU/BUILDINGS.DAMAGEDMACHINE.DDS'
-		},
-		{
-			name = 'VEHICLE_BUILDING_ABANDONED',
-			scan = {'ABANDONED', 'UW_ABANDONED'},
-			tech = 'VEHICLE_SCAN1',
-			icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-		},
-		{
-			name = 'VEHICLE_BUILDING_RUIN',
-			scan = {'RUIN', 'UW_RUIN'},
-			tech = 'VEHICLE_SCAN2',
-			icon = 'QUICKMENU/BUILDINGS.RUIN.DDS'
-		},
-		{
-			name = 'VEHICLE_BUILDING_NPC',
-			scan = {'MONOLITH', 'PLAQUE'},
-			tech = 'VEHICLE_SCAN2',
-			icon = 'QUICKMENU/BUILDINGS.MONOLITH.DDS'
-		},
-		{
-			name = 'SUB_RADAR_SCAN_CRASH',
-			scan = {'UW_SHIPCRASH'},
-			tech = 'SUB_BINOCS',
-			icon = 'QUICKMENU/BUILDINGS.STARSHIPS.DDS'
-		},
-		{
-			name = 'SUB_RADAR_SCAN_FREIGHTER',
-			scan = {'UW_FREIGHTCRASH'},
-			tech = 'SUB_BINOCS',
-			icon = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
-		},
-		{
-			name = 'SUB_RADAR_SCAN_ABANDON',
-			scan = {'UW_ABANDONED'},
-			tech = 'SUB_BINOCS',
-			icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-		},
-		{
-			name = 'SUB_RADAR_SCAN_RUIN',
-			scan = {'UW_RUIN'},
-			tech = 'SUB_BINOCS',
-			icon = 'QUICKMENU/BUILDINGS.RUIN.DDS'
-		},
-		{
-			name = 'BUILDING_SHOP_L',
-			scan = {'SHOP', 'OUTPOST'},
-			tech = 'VEHICLE_SCAN1',
-			icon = 'BUILDABLE/BUILDABLE.LANDINGPAD.DDS'
-		},
-		{
-			name = 'INTRCT_CLAIM_BASE',
-			scan = {'BASE'},
-			tech = 'VEHICLE_SCAN2',
-			icon = 'BUILDABLE/BUILDABLE.BASECOREFLAG.DDS'
-		},
-		{
-			name = 'UI_LIBRARY_ENTRANCE_DESC',
-			scan = {'LIBRARY'},
-			tech = 'VEHICLE_SCAN2',
-			icon = 'UPDATE3/TREASUREPROD.STRANGEBOOK.DDS'
-		},
-		{
-			name = 'MECH_SCAN_FACT',
-			scan = {'HARVESTER', 'RADIOTOWER', 'FACTORY', 'OBSERVATORY'},
-			tech = 'VEHICLE_SCAN',
-			icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-		},
-		{
-			name = 'MECH_SCAN_FACT',
-			scan = {'HARVESTER', 'RADIOTOWER', 'FACTORY', 'OBSERVATORY'},
-			tech = 'MECH_SCAN',
-			icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-		},
-		{
-			name = 'MECH_SCAN_CRASH',
-			scan = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
-			tech = 'VEHICLE_SCAN',
-			icon = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
-		},
-		{
-			name = 'MECH_SCAN_CRASH',
-			scan = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
-			tech = 'MECH_SCAN',
-			icon = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
-		}
+	┠───────────────────────────────────────────────────────────────────────────────────
+	┃ Rebuild vehicle scanner table
+────┸───────────────────────────────────────────────────────────────────────────────--]]
+scan_table = {
+	{
+		name = 'VEHICLE_BUILDING_DEPOT',
+		scan = {'DEPOT', 'TERMINAL'},
+		tech = 'VEHICLE_SCAN',
+		icon = 'QUICKMENU/BUILDINGS.DEPOT.DDS'
 	},
-	AddNewEntry = function(ste)
-		return [[
-			<Property value="GcVehicleScanTableEntry.xml">
-				]]..Scan_Table.AddScanList(ste.scan)..[[
-				<Property name="Name" value="]]..ste.name..[[" />
-				<Property name="RequiredTech" value="]]..ste.tech..[[" />
-				<Property name="Icon" value="TkTextureResource.xml">
-					<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/]]..ste.icon..[[" />
-				</Property>
-			</Property>
-		]]
-	end,
-	AddScanList = function(lst)
-		local exml = '<Property name="ScanList">'
-		for i = 1, #lst do
-			exml = exml..[[
-				<Property value="NMSString0x20.xml">
-					<Property name="Value" value="]] ..lst[i]..[[" />
-				</Property>]]
-		end
-		return exml..'</Property>'
-	end
+	{
+		name = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
+		scan = {'DROPPOD'},
+		tech = 'VEHICLE_SCAN1',
+		icon = 'QUICKMENU/BUILDINGS.DAMAGEDMACHINE.DDS'
+	},
+	{
+		name = 'VEHICLE_BUILDING_ABANDONED',
+		scan = {'ABANDONED', 'UW_ABANDONED'},
+		tech = 'VEHICLE_SCAN1',
+		icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+	},
+	{
+		name = 'VEHICLE_BUILDING_RUIN',
+		scan = {'RUIN', 'UW_RUIN'},
+		tech = 'VEHICLE_SCAN2',
+		icon = 'QUICKMENU/BUILDINGS.RUIN.DDS'
+	},
+	{
+		name = 'VEHICLE_BUILDING_NPC',
+		scan = {'MONOLITH', 'PLAQUE'},
+		tech = 'VEHICLE_SCAN2',
+		icon = 'QUICKMENU/BUILDINGS.MONOLITH.DDS'
+	},
+	{
+		name = 'SUB_RADAR_SCAN_CRASH',
+		scan = {'UW_SHIPCRASH'},
+		tech = 'SUB_BINOCS',
+		icon = 'QUICKMENU/BUILDINGS.STARSHIPS.DDS'
+	},
+	{
+		name = 'SUB_RADAR_SCAN_FREIGHTER',
+		scan = {'UW_FREIGHTCRASH'},
+		tech = 'SUB_BINOCS',
+		icon = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
+	},
+	{
+		name = 'SUB_RADAR_SCAN_ABANDON',
+		scan = {'UW_ABANDONED'},
+		tech = 'SUB_BINOCS',
+		icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+	},
+	{
+		name = 'SUB_RADAR_SCAN_RUIN',
+		scan = {'UW_RUIN'},
+		tech = 'SUB_BINOCS',
+		icon = 'QUICKMENU/BUILDINGS.RUIN.DDS'
+	},
+	{
+		name = 'SUB_RADAR_SCAN_RUIN',
+		scan = {'DEPOT', 'TERMINAL'},
+		tech = 'MECH_SCAN',
+		icon = 'QUICKMENU/BUILDINGS.DEPOT.DDS'
+	},
+	{
+		name = 'MECH_SCAN_FACT',
+		scan = {'HARVESTER', 'RADIOTOWER', 'FACTORY', 'OBSERVATORY'},
+		tech = 'MECH_SCAN',
+		icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+	},
+	{
+		name = 'MECH_SCAN_CRASH',
+		scan = {'DISTRESS', 'CRASHED_FREIGHTER', 'DISTRESS_NPC'},
+		tech = 'MECH_SCAN',
+		icon = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
+	},
+	{
+		name = 'BUILDING_SHOP_L',
+		scan = {'SHOP', 'OUTPOST'},
+		tech = 'VEHICLE_SCAN1',
+		icon = 'BUILDABLE/BUILDABLE.LANDINGPAD.DDS'
+	},
+	{
+		name = 'INTRCT_CLAIM_BASE',
+		scan = {'BASE'},
+		tech = 'VEHICLE_SCAN2',
+		icon = 'BUILDABLE/BUILDABLE.BASECOREFLAG.DDS'
+	},
+	{
+		name = 'MECH_SCAN_FACT',
+		scan = {'HARVESTER', 'RADIOTOWER', 'FACTORY', 'OBSERVATORY'},
+		tech = 'VEHICLE_SCAN2',
+		icon = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+	},
+	{
+		name = 'MECH_SCAN_CRASH',
+		scan = {'DISTRESS', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH', 'DISTRESS_NPC'},
+		tech = 'VEHICLE_SCAN2',
+		icon = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
+	}
 }
 
-local function BuildVehicleScanTable()
-	local exml = ''
-	for i=1, #Scan_Table.dat do
-		exml = exml..Scan_Table.AddNewEntry(Scan_Table.dat[i])
+function BuildVehicleScanTable()
+	local TEXT = ''
+	for i=1, #scan_table, 1 do
+		TEXT = TEXT .. GetScanTableEntry(scan_table[i])
 	end
-	return exml
+	return TEXT
 end
 
-local function AddNewScanEvent(name, class)
+function GetScanTableEntry(x)
+	return [[
+	<Property value="GcVehicleScanTableEntry.xml">
+		]] .. GetScanList(x.scan) .. [[
+		<Property name="Name" value="]] .. x.name .. [[" />
+		<Property name="RequiredTech" value="]] .. x.tech .. [[" />
+		<Property name="Icon" value="TkTextureResource.xml">
+			<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/]] .. x.icon .. [[" />
+		</Property>
+	</Property>
+	]]
+end
+
+function GetScanList(lst)
+	local TEXT = '<Property name="ScanList">'
+	for i=1, #lst, 1 do
+		TEXT = TEXT .. [[
+			<Property value="NMSString0x20.xml">
+				<Property name="Value" value="]] .. lst[i] .. [[" />
+			</Property>
+		]]
+	end
+	return TEXT .. '</Property>'
+end
+
+function GetScanEvent(Name)
 	return [[
 	<Property value="GcScanEventData.xml">
-		<Property name="Name" value="]]..string.upper(name)..[[" />
+		<Property name="Name" value="]] .. string.upper(Name) .. [[" />
 		<Property name="ForceInteraction" value="" />
 		<Property name="ForceInteractionType" value="GcInteractionType.xml">
 			<Property name="InteractionType" value="None" />
@@ -158,8 +154,6 @@ local function AddNewScanEvent(name, class)
 		<Property name="AlwaysShow" value="False" />
 		<Property name="NeverShow" value="False" />
 		<Property name="PlanetLabelText" value="" />
-		<Property name="SurveyDistance" value="0" />
-		<Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
 		<Property name="EventStartType" value="ObjectScan" />
 		<Property name="EventEndType" value="Proximity" />
 		<Property name="EventPriority" value="Regular" />
@@ -169,18 +163,18 @@ local function AddNewScanEvent(name, class)
 		<Property name="BuildingLocation" value="Nearest" />
 		<Property name="BuildingType" value="BuildingClass" />
 		<Property name="BuildingClass" value="GcBuildingClassification.xml">
-			<Property name="BuildingClass" value="]]..(class or name)..[[" />
+			<Property name="BuildingClass" value="]] .. Name .. [[" />
 		</Property>
-		<Property name="AllowFriendsBases" value="False" />
-		<Property name="ForceWideRandom" value="False" />
+		<Property name="AllowFriendBases" value="False" />
+		<Property name="ForceWideRandom" value="True" />
 		<Property name="MustFindSystem" value="False" />
 		<Property name="AllowOverriddenBuildings" value="True" />
-		<Property name="SolarSystemLocation" value="Local" />
+		<Property name="SolarSystemLocation" value="LocalOrNear" />
 		<Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
 			<Property name="UseStarType" value="False" />
 			<Property name="UseWealth" value="False" />
-			<Property name="UseTrading" value="False" />
-			<Property name="UseRace" value="GcAlienRace.xml">
+			<Property name="Usetrading" value="False" />
+			<Property name="Userace" value="GcAlienRace.xml">
 				<Property name="AlienRace" value="None" />
 			</Property>
 			<Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
@@ -202,8 +196,6 @@ local function AddNewScanEvent(name, class)
 			</Property>
 			<Property name="AllowUnsafeMatches" value="False" />
 			<Property name="NeverAllowEmpty" value="False" />
-			<Property name="NeverAllowAbandoned" value="False" />
-			<Property name="RequireUndiscovered" value="False" />
 			<Property name="NeedsWaterPlanet" value="False" />
 			<Property name="NeedsExtremeSentinelPlanet" value="False" />
 			<Property name="NeverAllowExtremeSentinelPlanet" value="False" />
@@ -227,8 +219,8 @@ local function AddNewScanEvent(name, class)
 		<Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
 			<Property name="UseStarType" value="False" />
 			<Property name="UseWealth" value="False" />
-			<Property name="UseTrading" value="False" />
-			<Property name="UseRace" value="GcAlienRace.xml">
+			<Property name="Usetrading" value="False" />
+			<Property name="Userace" value="GcAlienRace.xml">
 				<Property name="AlienRace" value="None" />
 			</Property>
 			<Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
@@ -250,8 +242,6 @@ local function AddNewScanEvent(name, class)
 			</Property>
 			<Property name="AllowUnsafeMatches" value="False" />
 			<Property name="NeverAllowEmpty" value="False" />
-			<Property name="NeverAllowAbandoned" value="False" />
-			<Property name="RequireUndiscovered" value="False" />
 			<Property name="NeedsWaterPlanet" value="False" />
 			<Property name="NeedsExtremeSentinelPlanet" value="False" />
 			<Property name="NeverAllowExtremeSentinelPlanet" value="False" />
@@ -284,14 +274,11 @@ local function AddNewScanEvent(name, class)
 		<Property name="TechShopType" value="GcTechnologyCategory.xml">
 			<Property name="TechnologyCategory" value="All" />
 		</Property>
-		<Property name="OSDMessage" value="SIGNAL_]]..string.upper(name)..[[" />
+		<Property name="OSDMessage" value="SIGNAL_]] .. string.upper(Name) .. [[" />
 		<Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM" />
 		<Property name="MarkerLabel" value="" />
 		<Property name="MarkerIcon" value="TkTextureResource.xml">
 			<Property name="Filename" value="" />
-		</Property>
-		<Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
-			<Property name="ScannerIconHighlightType" value="Diamond" />
 		</Property>
 		<Property name="StartTime" value="0" />
 		<Property name="MessageTime" value="0" />
@@ -303,7 +290,7 @@ local function AddNewScanEvent(name, class)
 		<Property name="TooltipTime" value="10" />
 		<Property name="TooltipRepeats" value="False" />
 		<Property name="ShowEndTooltip" value="True" />
-		<Property name="TooltipMessage" value="TIP_]]..string.upper(name)..[[" />
+		<Property name="TooltipMessage" value="TIP_]] .. string.upper(Name) .. [[" />
 		<Property name="ResourceOverride" value="GcResourceElement.xml">
 			<Property name="Filename" value="" />
 			<Property name="Seed" value="GcSeed.xml">
@@ -315,19 +302,17 @@ local function AddNewScanEvent(name, class)
 				<Property name="Samplers" />
 			</Property>
 		</Property>
-	</Property>]]
+	</Property>
+	]]
 end
 
-Mod_Version = 1.33
-
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..Mod_Version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.vehicle scan upgrade.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.50',
+	NMS_VERSION			= '2.61',
 	MOD_DESCRIPTION		= [[
-							Adds planetary archive, base computer, minor settlement, trading post,
-							secure facility, plaque, remote terminal, distress signals
-							and underwater targets to the exocraft scanner.
+							Add base computer, minor settlement, trading post, secure facility, plaque,
+							remote terminal, distress signals and underwater targets to the exocraft scanner.
 							Make exocraft scanner tech available to the mech ]],
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -351,14 +336,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'MONOLITH'},
 				REPLACE_TYPE		= 'ADDAFTERSECTION',
-				ADD					=
-									AddNewScanEvent('Base')
-									..
-									AddNewScanEvent('Plaque')
-									..
-									AddNewScanEvent('Terminal')
-									..
-									AddNewScanEvent('LIBRARY', 'LargeBuilding')
+				ADD					= GetScanEvent('Base') .. GetScanEvent('Plaque') .. GetScanEvent('Terminal')
 			}
 		}
 	},
