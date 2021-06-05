@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] 			= "Free Upgrades.pak",     --the name of the pak created (if not combined) - REQUIRED
   ["MOD_DESCRIPTION"]		= "",         --optional, for reference
-  ["MOD_AUTHOR"]			= "MSO53",         --optional, for reference
+  ["MOD_AUTHOR"]			= "",         --optional, for reference
   ["NMS_VERSION"]			= "3.0",      --optional, for reference
   ["MODIFICATIONS"] 		=             --REQUIRED SECTION
 	{

@@ -64,6 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -73,7 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -83,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Cost" value="C_ALLOWSCAN" />
           <Property name="Rewards">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="MY_SCAN" />
+              <Property name="Value" value="MY_MULTITOOL" />
             </Property>
           </Property>
           <Property name="Mood" value="GcAlienMood.xml">
@@ -97,6 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -106,11 +108,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
-          <Property name="Name" value="Find Exosuit DropPod" />
+          <Property name="Name" value="Exosuit Drop Pod" />
           <Property name="Text" value="" />
           <Property name="IsAlien" value="False" />
           <Property name="Cost" value="C_ALLOWSCAN" />
@@ -130,6 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -139,7 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -159,6 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="False" />
           <Property name="NextInteraction" value="?MY_SCANNER" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -168,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -207,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="RequiresScanEvent" value="" />
       <Property name="Options">
         <Property value="GcAlienPuzzleOption.xml">
-          <Property name="Name" value="UI_PORTAL_OPT" />
+          <Property name="Name" value="Portal" />
           <Property name="Text" value="" />
           <Property name="IsAlien" value="False" />
           <Property name="Cost" value="C_ALLOWSCAN" />
@@ -227,6 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -236,17 +241,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
-          <Property name="Name" value="Manufacturing Facility" />
+          <Property name="Name" value="Library" />
           <Property name="Text" value="" />
           <Property name="IsAlien" value="False" />
           <Property name="Cost" value="C_ALLOWSCAN" />
           <Property name="Rewards">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="MY_FACTORY" />
+              <Property name="Value" value="MY_LIBRARY" />
             </Property>
           </Property>
           <Property name="Mood" value="GcAlienMood.xml">
@@ -260,6 +265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -269,7 +275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -293,6 +299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -302,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -322,6 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TruncateCost" value="False" />
           <Property name="MarkInteractionComplete" value="True" />
           <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="True" />
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -331,7 +339,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="WordCategory" value="MISC" />
+            <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -370,7 +378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[  <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="MY_CRASHEDSHIP" />
-      <Property name="Common" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="List">
@@ -396,8 +404,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"}},
 							["ADD"] =
 [[  <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="MY_SCAN" />
-      <Property name="Common" value="GcRewardTableItemList.xml">
+      <Property name="Id" value="MY_MULTITOOL" />
+      <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="List">
@@ -415,27 +423,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
     <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="MY_FACTORY" />
-      <Property name="Common" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectAlways" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardScanEvent.xml">
-              <Property name="Event" value="FACTORY" />
-              <Property name="ScanEventTable" value="Planet" />
-              <Property name="DoAerialScan" value="False" />
-              <Property name="UseMissionSeedForEvent" value="False" />
-            </Property>
-            <Property name="LabelID" value="Factory" />
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="MY_REVEAL_PORTAL" />
-      <Property name="Common" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="List">
@@ -448,6 +437,25 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="UseMissionSeedForEvent" value="False" />
             </Property>
             <Property name="LabelID" value="RevealPortal" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="MY_LIBRARY" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="SelectAlways" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardScanEvent.xml">
+              <Property name="Event" value="LIBRARY" />
+              <Property name="ScanEventTable" value="Planet" />
+              <Property name="DoAerialScan" value="False" />
+              <Property name="UseMissionSeedForEvent" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>

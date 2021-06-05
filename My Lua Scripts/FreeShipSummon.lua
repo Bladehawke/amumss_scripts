@@ -11,7 +11,7 @@ local ModDesc =
 local BatchVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = ModName .. " " .. GameVersion .. ModVersion .. ".pak",
+    ["MOD_FILENAME"] = ModName .. ".pak",
     ["MOD_DESCRIPTION"] = ModDesc,
     ["MOD_AUTHOR"] = AuthorName,
     ["NMS_VERSION"] = GameVersion,

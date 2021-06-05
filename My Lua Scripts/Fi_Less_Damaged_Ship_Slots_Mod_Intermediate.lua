@@ -1,16 +1,15 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fi_Less_Damaged_Ship_Slots_Mod.pak",
+["MOD_FILENAME"] 			= "Fi_Less_Damaged_Ship_Slots_Mod_Intermediate.pak",
 ["MOD_AUTHOR"]				= "Ficell",
-["NMS_VERSION"]				= "3.0",
+["NMS_VERSION"]				= "3.37",
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{						
 						{

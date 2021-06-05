@@ -6,11 +6,11 @@ local AuthorName = "Bladehawke"
 local ModName = "FreePortals"
 local GameVersion = "2.62"
 local ModVersion = "a"
-local ModDesc = "Allows you to use thje portal without charging it."
+local ModDesc = "Allows you to use the portal without charging it."
 local BatchVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = ModName .. " " .. GameVersion .. ModVersion .. ".pak",
+    ["MOD_FILENAME"] = ModName .. ".pak",
     ["MOD_DESCRIPTION"] = ModDesc,
     ["MOD_AUTHOR"] = AuthorName,
     ["NMS_VERSION"] = GameVersion,
