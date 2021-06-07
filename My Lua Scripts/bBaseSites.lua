@@ -197,7 +197,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
     https://nomansskymods.com/mods/easy-base-building/.
 ]],
   ["MOD_AUTHOR"] = "Bladehawke",
-  ["NMS_VERSION"] = "2.42", -- Changes in SCANTABLE files made this change necessary
+  ["NMS_VERSION"] = "3.42", -- Changes in SCANTABLE files made this change necessary
+  ["UPDATE_LINK"] = "https://pastebin.com/raw/UkVFmagZ",
+  
   ["MODIFICATIONS"] = {
     {
       ["MBIN_CHANGE_TABLE"] = {
