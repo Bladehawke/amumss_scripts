@@ -197,7 +197,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     https://nomansskymods.com/mods/easy-base-building/.
 ]],
   ["MOD_AUTHOR"] = "Bladehawke",
-  ["NMS_VERSION"] = "3.42", -- Changes in SCANTABLE files made this change necessary
+  ["NMS_VERSION"] = "3.68", -- Changes in PLANETBUILDINGTABLE files made this change necessary
   ["UPDATE_LINK"] = "https://pastebin.com/raw/UkVFmagZ",
   
   ["MODIFICATIONS"] = {
@@ -218,7 +218,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             }
           }
         },
-        {
+        
+--[[    Deprecated, PLANETBUILDINGTABLE no longer allows adding a waypoint in this manner
+	    {
           ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/ENVIRONMENT/PLANETBUILDINGTABLE.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
@@ -229,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               }
             }
           }
-        },
+        }, ]]
         {
           ["MBIN_FILE_SOURCE"] = {
             "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEPLANET.MBIN",
