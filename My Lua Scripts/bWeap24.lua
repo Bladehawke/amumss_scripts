@@ -2,9 +2,9 @@
 -- make it longer :p
 local AuthorName = "Bladehawke"
 local ModName = "bWeap24"
-local GameVersion = "3.21"
+local GameVersion = "3.91"
 local ModVersion = "a"
-local ModDesc = "Makes Multitools all spawn with 24 slots"
+local ModDesc = "Makes Multitools all spawn with 24 slots expandable to 48" 
 local ModBatch = "bInventoryTweaks"
 local BatchVersion = "a"
 
@@ -20,56 +20,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "",
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAPON_SMALL"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "24"},
-                                {"MaxSize", "24"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAPON_MEDIUM"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "24"},
-                                {"MaxSize", "24"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAPON_LARGE"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "24"},
-                                {"MaxSize", "24"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAPON_DEFAULT"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "24"},
-                                {"MaxSize", "24"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAPON_PRISTINE"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "24"},
-                                {"MaxSize", "24"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAPON_ALIEN"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "24"},
-                                {"MaxSize", "24"}
-                            }
-                        },
-                        --  for jj, mySize in ipairs({"Small","Medium","Large"}) do
                         {
                             ["PRECEDING_KEY_WORDS"] = "WeaponSmall",
                             ["REPLACE_TYPE"] = "",
@@ -93,8 +43,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"MinSlots", "24"},
                                 {"MaxSlots", "24"}
                             }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"WeaponInventoryMaxUpgradeSize", "MaxInventoryCapacity"},
+                            ["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"C", "48"},
+                                {"B", "48"},
+                                {"A", "48"},
+                                {"S", "48"}
+                            }
                         }
-                        --end
                     }
                 }
             }

@@ -4,9 +4,9 @@
 
 local AuthorName = "Bladehawke"
 local ModName = "bFreighter48"
-local GameVersion = "3.21"
+local GameVersion = "3.91"
 local ModVersion = "a"
-local ModDesc = "Makes Freighters spawn with 48 inventory/tech slots"
+local ModDesc = "Makes Freighters spawn with 48 inventory/tech/cargo slots"
 local ModBatch = "bInventoryTweaks"
 local BatchVersion = "a"
 
@@ -28,8 +28,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -38,8 +40,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -48,10 +52,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
+                       --[[ Removed
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_SMALL"},
                             ["REPLACE_TYPE"] = "",
@@ -76,6 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"MaxSize", "48"}
                             }
                         }
+                        ]]
                     }
                 }
             }

@@ -4,9 +4,9 @@
 
 local AuthorName = "Bladehawke"
 local ModName = "bShips48"
-local GameVersion = "3.21"
+local GameVersion = "3.91"
 local ModVersion = "a"
-local ModDesc = "Makes ships spawn with 48 inventory and technology slots"
+local ModDesc = "Makes ships spawn with 48 inventory, technology, and cargo slots"
 local ModBatch = "bInventoryTweaks"
 local BatchVersion = "a"
 
@@ -28,8 +28,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -38,8 +40,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -48,8 +52,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -58,8 +64,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -68,8 +76,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -78,8 +88,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -88,8 +100,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -98,8 +112,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -108,8 +124,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -118,8 +136,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -128,8 +148,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -138,8 +160,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -148,8 +172,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -158,8 +184,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -168,8 +196,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -178,8 +208,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -188,8 +220,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -198,8 +232,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
@@ -208,194 +244,48 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"MinSlots", "48"},
                                 {"MaxSlots", "48"},
-                                {"MinExtraTech", "48"},
-                                {"MaxExtraTech", "48"}
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ALIEN_SMALL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SailSmall"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ALIEN_MEDIUM"},
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SailMedium"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ALIEN_LARGE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", "SailLarge"},
                             ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
+                                {"MinSlots", "48"},
+                                {"MaxSlots", "48"},
+                                {"MinTechSlots", "48"},
+                                {"MaxTechSlots", "48"},
+                                {"MinCargoSlots", "48"},
+                                {"MaxCargoSlots", "48"}
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROYAL_SMALL"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROYAL_MEDIUM"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROYAL_LARGE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHUTTLE_BASE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHUTTLE_SMALL"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHUTTLE_MEDIUM"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHUTTLE_LARGE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHUTTLE_XLARGE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SCI_BASE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SCI_SMALL"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SCI_MEDIUM"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SCI_LARGE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_BASE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_SMALL"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_MEDIUM"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIGHTER_LARGE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DROPSHIP_BASEA"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DROPSHIP_SMALL"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DROPSHIP_MEDIUM"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DROPSHIP_LARGE"},
-                            ["REPLACE_TYPE"] = "",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"MinSize", "48"},
-                                {"MaxSize", "48"}
-                            }
-                        }
                     }
                 }
             }
