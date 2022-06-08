@@ -13,7 +13,7 @@ REWARD_TABLE_TEXT =
 
 SCANEVENT_TEXT =
   [[
-	<Property value="GcScanEventData.xml">
+    <Property value="GcScanEventData.xml">
       <Property name="Name" value="BASE" />
       <Property name="ForceInteraction" value="" />
       <Property name="ForceInteractionType" value="GcInteractionType.xml">
@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
         
 --[[    Deprecated, PLANETBUILDINGTABLE no longer allows adding a waypoint in this manner
-	    {
+        {
           ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/ENVIRONMENT/PLANETBUILDINGTABLE.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
@@ -239,19 +239,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
             }
           }
         }, ]]
-				-- New way :)
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/ENVIRONMENT/PLANETBUILDINGTABLE.MBIN",
+        -- New way :)
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/ENVIRONMENT/PLANETBUILDINGTABLE.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
               ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Base"},
-							["REPLACE_TYPE"] = "",
+              ["REPLACE_TYPE"] = "",
               ["VALUE_CHANGE_TABLE"] = {
-								{"ClusterLayout", "SINGLE_WAYPOINT"},
-							}
-						}
-					}
-				,}
+                {"ClusterLayout", "SINGLE_WAYPOINT"},
+              }
+            }
+          }
+        },
 
         {
           ["MBIN_FILE_SOURCE"] = {
